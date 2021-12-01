@@ -1,0 +1,80 @@
+<html>
+<head>
+<title>FORMULARIO</title>
+<script type="text/javascript">
+	function obtenerdatos()
+	{
+		var nombre = document.getElementById('nombre').value;
+		
+		var edad = parseFloat(document.getElementById('edad').value);
+
+		document.registro.nombreobtenido.value = nombre;
+		
+		document.registro.edadobtenida.value = edad;
+
+	}
+</script>
+</head>
+<body>
+<form name="registro">
+<table border="1">
+  <tr>
+    <td>N°MATRICULA:</td><td><input type="number" name="matricula" id="numero" ></td>
+  </tr>
+<tr>
+	<td>Nombre y apellidos:</td><td><input type="text" name="nombre" id="nombre" ></td>
+</tr>
+<tr>
+	<td>grupo:</td><td><input type="text" name="Semestre" id="Semestre" ></td>
+</tr>	
+<tr>
+	<td>Semestre:</td><td><input type="number" name="semestre" id="numero" ></td>
+</tr>
+<tr>
+	<td>Email:</td><td><input type="text" name="Email" id="Email" ></td>
+</tr>	
+<tr>
+	<td>contaseña:</td><td><input type="text" name="contaseña" id="contaseña" ></td>
+</tr>	
+<tr>
+	<td>Comentarios:</td><td><input type="text" name="Comentarios" id="Comentarios" ></td>
+</tr>	
+<td colspan "2"><input type="button" name="btn1" value="Enviar" onclick="obtenerdatos()"></td>
+<tr>
+</tr>	
+<td colspan "2"><input type="reset" name="btn1" value="Eliminar" onclick="obtenerdatos()"></td>
+<tr>
+</tr>	
+<td colspan "2"><form method="get" action="https://www.google.com/search">
+   
+  </form> <input type="submit"> 
+  <form method="get" action="https://www.google.com/search" target="_blank">
+    <input type="search" name="q" placeholder="Término a buscar" autofocus required>
+    
+    </form>
+</td>
+<tr>
+	
+
+</table><br/><br/><br/>
+<body>
+
+	
+	
+	
+
+
+<table border="1">
+<tr>
+	<td>Nombre:</td><td><input type="text" name="nombreobtenido" id="nombreobtenido" ></td>
+</tr>
+<tr>
+	<td>N°MATRICULA:</td><td><input type="text" name="edadobtenida" id="edadobtenida" ></td>
+</tr>	
+
+
+</table>
+</form>
+</center>
+</body>
+</html>
